@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<string.h>
+int mystrlen(char X[])
+{
+	int ret = 0,i;
+	for(i=0; X[i]! = '\0' , i++)
+		;
+	ret = i;
+	return ret;
+}
+void myconcat(char str1[] , char str2[])
+{
+	int i,j,len = mystrlen(str1);
+	i = len;
+	for(j = 0;str2[j]! = '\0' ; j++)
+		str1[i++] = str 2[j];
+	str1[i] = '\0';
+}
+int main()
+{
+	char str1[100],str[100];
+	printf("Enter first string");
+	gets(str1);
+	printf("Length of %s is %d",str1,mystrlen(str));
+	fflush(stdin);
+	printf("Enter second string");
+	gets(str2);
+	printf("Length of %s is %d",str2,mystrlen(str2));
+	myconcat(str1,str2);
+	printf("After concat %s,str1);
+}
+	 int mycompare(char str1 , char str2)
+{
+	return strcmp(str1,str2);
+return 0:
+}
